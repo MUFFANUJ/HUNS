@@ -1,0 +1,184 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: rgba(255, 246, 215, 1);
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+header .logo {
+  width: 26px;
+  color: rgba(0,0,0,1);
+  font-family: Quicksand;
+  font-weight: Bold;
+  font-size: 100px;
+}
+header nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a {
+  width: 269px;
+  text-decoration: none;
+  font-family: Quicksand;
+  font-size: 44px;
+  color: rgba(24, 30, 81, 1);
+}
+
+.hero {
+  color: rgba(24,30,81,1);
+  font-size: 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: rgba(24,30,81,1);
+  font-size: 50px;
+  font-weight: Bold;
+}
+
+.hero h1 span {
+  color: black;
+
+}
+.hero button {
+  background:rgba(255, 168, 39, 1);
+  color: #000000;
+  padding: 18px 31px;
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+  border-radius: 55px;
+}
+.about{
+  display: flex;
+  justify-content: space-between;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.feature h3 {
+  width: 372px;
+  height: 372px;
+  background:rgba(217, 217, 217, 1);
+  border-radius: 19px;
+  padding: 50px 50px;
+  margin: 10px;
+  color: rgba(25, 30, 82, 1);
+  font-size: 50px;
+  text-align: left;
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+}
+.product {
+  display: flex;
+  width: 200px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+  overflow: hidden; /* Ensures that excess image parts are hidden */
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.faq {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.faq h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.faq-item {
+  margin-bottom: 15px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.faq-item h3 {
+  margin-bottom: 5px;
+}
+
+.faq-item p {
+  padding: 0 10px;
+  max-height: 0;
+  transition: max-height 0.5s ease;
+}
+
+.faq-item:hover p {
+  max-height: 100px;
+}
+p {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer button {
+  background:rgba(255, 168, 39, 1);
+  color: #000000;
+  padding: 18px 31px;
+  cursor: pointer;
+  font-size: 30px;
+  border: none;
+  border-radius: 55px;
+}
+
+@media (max-width: 768px) {
+  .features, .products {
+    flex-direction: column;
+  }
+
+  .feature, .product {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+}
+.product-tag {
+  text-align: center;
+  margin-top: 40px;
+}
+.extra span{
+  font-weight: bold;
+}
+.extra h3{
+  color: rgba(24,30,81,1);
+}

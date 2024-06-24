@@ -1,0 +1,42 @@
+/* Global styles for responsiveness (consider adding) */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for the expandable div and its content */
+.expandable-div {
+  position: relative; /* Required for overflow: hidden */
+  display: inline-block; /* Adjust as needed (e.g., block) */
+  cursor: pointer; /* Indicate hover interaction */
+  /* Optional: Add a subtle border or background color */
+  /* padding: 10px; (Optional: Add padding) */
+}
+
+.expandable-div .expandable-content {
+  position: absolute;
+  top: 100%; /* Positioned below initial content */
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px; /* Adjust as needed */
+  display: none; /* Initially hidden */
+  overflow: hidden; /* Clip overflowing content */
+  transition: opacity 0.2s ease-in-out; /* Smooth fade-in/out animation */
+}
+
+.expandable-div:hover .expandable-content {
+  display: block; /* Show content on hover */
+  opacity: 1; /* Make content fully visible */
+}
+
+/* Optional: Media queries for responsive adjustments */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+}
