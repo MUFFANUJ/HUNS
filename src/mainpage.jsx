@@ -1,10 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./mainpage.css";
-import tshirt from "./assets/T-shirt-img.jpg";
-import hoodie from "./assets/camoflague.jpg";
-import trouser from "./assets/trouser-img.jpg";
-
+import tshirt from "./assets/Sd block front.jpg";
+import hoodie from "./assets/Hoodie pic 1.jpg";
+import trouser from "./assets/tiny einstein back.jpg";
 function HomePage() {
   const navigate = useNavigate();
 
@@ -89,15 +88,15 @@ function HomePage() {
       <h2 className="product-tag">What we do best?</h2>
       <div className="products">
         <div className="product">
-          <img src={hoodie} alt="Hoodie" />
+          <div><img src={hoodie} alt="Hoodie" /></div>
           <p>Hoodies</p>
         </div>
         <div className="product">
-          <img src={tshirt} alt="T-shirt" />
+          <div><img src={tshirt} alt="T-shirt" /></div>
           <p>T shirts</p>
         </div>
         <div className="product">
-          <img src={trouser} alt="Lowers" />
+          <div><img src={trouser} alt="Lowers" /></div>
           <p>Lowers</p>
         </div>
       </div>

@@ -99,10 +99,9 @@ header nav a {
   justify-content: space-around;
 }
 .product {
-  display: flex;
-  width: 200px; /* Adjust as needed */
-  height: 200px; /* Adjust as needed */
-  overflow: hidden; /* Ensures that excess image parts are hidden */
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
   text-align: center;
 }
 
