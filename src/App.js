@@ -4,7 +4,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './mainpage';
 import ContactUs from './ContactUs';
-
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 function App() {
   return (
     <Router>
