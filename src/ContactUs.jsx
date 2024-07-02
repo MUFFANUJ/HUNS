@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import { IoMdArrowRoundBack, IoMdPersonAdd } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
 function ContactUs() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,6 +25,7 @@ function ContactUs() {
 
   return (
     <Container className="mt-5">
+      <div onClick={()=> navigate("/HUNS")} style={{margin:"40px"}}><IoMdArrowRoundBack size={30}/></div>
       <Row className="justify-content-md-center">
         <Col md="6">
           <h1>Contact Us</h1>
