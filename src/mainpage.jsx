@@ -4,6 +4,7 @@ import "./mainpage.css";
 import tshirt from "./assets/Sd block front.jpg";
 import hoodie from "./assets/Hoodie pic 1.jpg";
 import trouser from "./assets/tiny einstein back.jpg";
+
 function HomePage() {
   const navigate = useNavigate();
 
@@ -13,20 +14,21 @@ function HomePage() {
 
   return (
     <div className="container">
+    
       <header>
         <div className="logo">HUNS</div>
         <nav>
           <a href="#">Brochure</a>
-          <a href="#" onClick={navigateToContact}>
+          {/* <a href="#" onClick={navigateToContact}>
             Contact
-          </a>
+          </a> */}
         </nav>
       </header>
-
+      <section>
       <div className="hero">
         <h1>
-          Quality Garments <br />
-          <span>Affordable prices</span>
+          <strong>Quality</strong> Garments <br />
+          <span><strong>Affordable</strong> prices</span>
         </h1>
         <p>
           With over 20 years of expertise, our garment manufacturing company is
@@ -37,16 +39,19 @@ function HomePage() {
         </p>
         <button onClick={navigateToContact}>Contact Us</button>
       </div>
-
+      </section>
+<section>
       <div className="about">
         <h2>Why Us?</h2>
-        <img src="download.jpeg" alt="About Us" />
+        <img src="https://pixlr.com/images/index/product-image-one.webp" alt="About Us" />
       </div>
+      </section>
+      <section>
       <div className="extra">
-        <h3>
-          <span>Custom </span>garment manufacturing and private labeling
+        <h2>
+          <strong>Custom </strong>garment manufacturing and private labeling
           services
-        </h3>
+        </h2>
         <p>
           We specialize in providing high-quality custom garment manufacturing
           and private labeling services. Whether you need unique designs for
@@ -57,6 +62,7 @@ function HomePage() {
           t-shirts, hoodies, jackets or lowers, we have got you covered.
         </p>
       </div>
+      
       <div className="features">
         <div className="feature">
           <h3>Bulk orders made easy</h3>
@@ -85,9 +91,22 @@ function HomePage() {
           </p>
         </div>
       </div>
+      </section>
+      <section>
       <h2 className="product-tag">What we do best?</h2>
       <div className="products">
         <div className="product">
+
+          {<img src={hoodie} alt="Hoodie" />}
+          <p>Hoodies</p>
+        </div>
+        <div className="product">
+          {<img src={tshirt} alt="T-shirt" />}
+          <p>T shirts</p>
+        </div>
+        <div className="product">
+          {<img src={trouser} alt="Lowers" />}
+
           <div><img src={hoodie} alt="Hoodie" /></div>
           <p>Hoodies</p>
         </div>
@@ -100,6 +119,7 @@ function HomePage() {
           <p>Lowers</p>
         </div>
       </div>
+      </section>
       <div className="faq">
         <h2>FAQ</h2>
         <div className="faq-item">
@@ -125,11 +145,10 @@ function HomePage() {
           <h3>What makes you different from any other manufacturer?</h3>
           <p></p>
         </div>
-      </div>
-
       <footer>
         <button onClick={navigateToContact}>Contact Us</button>
       </footer>
+      </div>
     </div>
   );
 }
