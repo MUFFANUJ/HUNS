@@ -25,12 +25,9 @@ body {
   flex-direction: column;
   align-items: center;
   width: 200px;
-  margin: 50px;
-  /* Adjust as needed */
+  margin: 50px; 
   height: 200px;
-  /* Adjust as needed */
   overflow: hidden;
-  /* Ensures that excess image parts are hidden */
   text-align: center;
 }
 

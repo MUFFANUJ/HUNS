@@ -5,7 +5,7 @@ import "./mainpage.css";
 import tshirt from "./assets/Sd block front.jpg";
 import hoodie from "./assets/Hoodie pic 1.jpg";
 import trouser from "./assets/tiny einstein back.jpg";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function HomePage() {
   const navigate = useNavigate();
   const navigateToContact = () => {
