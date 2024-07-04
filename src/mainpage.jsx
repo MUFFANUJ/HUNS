@@ -1,3 +1,4 @@
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./mainpage.css";
@@ -7,9 +8,11 @@ import trouser from "./assets/tiny einstein back.jpg";
 
 function HomePage() {
   const navigate = useNavigate();
-
   const navigateToContact = () => {
     navigate("/contact");
+  };
+  const navigateToProduct = () => {
+    navigate("/product");
   };
 
   return (
@@ -102,15 +105,15 @@ function HomePage() {
         <h2 className="product-tag">What we do best?</h2>
         <div className="products">
           <div className="product">
-            {<img src={hoodie} alt="Hoodie" />}
+            {<img src={hoodie} alt="Hoodie" onClick={navigateToProduct} />}
             <p>Hoodies</p>
           </div>
           <div className="product">
-            {<img src={tshirt} alt="T-shirt" />}
+            {<img src={tshirt} alt="T-shirt" onClick={navigateToProduct} />}
             <p>T shirts</p>
           </div>
           <div className="product">
-            {<img src={trouser} alt="Lowers" />}
+            {<img src={trouser} alt="Lowers" onClick={navigateToProduct} />}
             <p>Hoodies</p>
           </div>
         </div>
