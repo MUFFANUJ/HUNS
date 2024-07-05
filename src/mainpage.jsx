@@ -28,7 +28,7 @@ function HomePage() {
       <section>
         <div className="hero">
           <h1>
-            <strong>Quality</strong> Garments <br />
+            <strong>Quality</strong> <span>Garments</span><br/>
             <span>
               <strong>Affordable</strong> prices
             </span>
@@ -117,23 +117,6 @@ function HomePage() {
           </div>
         </div>
       </section>
-
-      <div class="main-box-container">
-        <div class="box-container">
-          <img src="https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-          <h3>Haruki Kurogane</h3>
-
-          <p>
-            Haruki Kurogane is a mysterious and enigmatic character who
-            possesses unparalleled skill in martial arts and a deep connection
-            to the ancient arts of swordsmanship. Despite their formidable
-            abilities, Haruki often prefers to keep to themselves, shrouded in
-            secrecy and rarely revealing their true intentions.
-          </p>
-
-          <h6>Expand </h6>
-        </div>
-      </div>
       <div className="faq">
         <h2>FAQ</h2>
         <div className="faq-item">
