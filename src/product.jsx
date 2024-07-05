@@ -83,9 +83,9 @@ function Productpage() {
           // Display all products if "All" is selected
           products.flatMap((category) =>
             category.items.map((item, idx) => (
-              <div key={idx} className="product">
-                <img src={item} alt={category.category} />
-                <p>{category.category}</p>
+              <div key={idx} className="product box-container">
+                <img src={item} alt={category.category} className="anime-img" />
+                <p className="anime">{category.category}</p>
               </div>
             ))
           )
@@ -94,9 +94,9 @@ function Productpage() {
           products
             .find((category) => category.category === selectedCategory)
             .items.map((item, idx) => (
-              <div key={idx} className="product">
-                <img src={item} alt={selectedCategory} />
-                <p>{selectedCategory}</p>
+              <div key={idx} className="product box-container">
+                <img src={item} alt={selectedCategory} className="anime-img" />
+                <p className="anime">{selectedCategory}</p>
               </div>
             ))
         )}
