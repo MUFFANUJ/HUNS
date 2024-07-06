@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState ,useRef} from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import { IoMdArrowRoundBack, IoMdPersonAdd } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
+import emailjs from '@emailjs/browser';
 
 function ContactUs() {
+  const form = useRef();
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: '',
@@ -21,7 +23,14 @@ function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData);
+    emailjs.sendForm('service_xdkkrkr', 'template_pxvq4y4', form.current, 'YYHtgp7__9NHK6z2K')
+    .then((result) => {
+      console.log("Successfully send")
+      form.current.reset();
+    }, (error) => {
+      console.log("Unsuccessful" + error.text);
+      form.current.reset();
+    });
   };
 
   return (
@@ -30,13 +39,12 @@ function ContactUs() {
       <Row className="justify-content-md-center">
         <Col md="6">
           <h1>Contact Us</h1>
-          <Form onSubmit={handleSubmit}>
+          <Form ref={form} onSubmit={handleSubmit}>
             <Form.Group controlId="formName">
               <Form.Label>Name</Form.Label>
               <Form.Control
-                type="text"
                 placeholder="Enter your name"
-                name="name"
+                type="text" name="user_name"
                 value={formData.name}
                 onChange={handleChange}
               />
@@ -45,9 +53,8 @@ function ContactUs() {
             <Form.Group controlId="formEmail" className="mt-3">
               <Form.Label>Email address</Form.Label>
               <Form.Control
-                type="email"
                 placeholder="Enter your email"
-                name="email"
+                type="email" name="user_email"
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -65,7 +72,7 @@ function ContactUs() {
               />
             </Form.Group>
 
-            <Button variant="primary" type="submit" className="mt-3">
+            <Button variant="primary" type="submit" className="mt-3" value="Send">
               Submit
             </Button>
           </Form>
