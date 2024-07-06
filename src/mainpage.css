@@ -1,16 +1,22 @@
 /* Reset some default styles */
+:root {
+  --main-bg-color: hsl(220, 18%, 13%);
+  --main-text-color: #ffffff;
+  --main-bg-light-color:#4E5155;
+  --transition-time: 0.5s;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato";
+  font-family: "Rubik", sans-serif;
 }
 
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   /* line-height: 1.6; */
-  background-color:#000435;
-  color: #333;
+  background:var(--main-bg-color);
+  color:var(--main-text-color);
 }
 
 section {
@@ -34,8 +40,8 @@ header {
 
 header .logo {
   width: 25vw;
-  color: #FF9933;
-  font-family: Quicksand;
+  color: whitesmoke;
+  font-family: "Rubik", sans-serif;
   font-weight: Bold;
   font-size: 5vw;
   text-align: center;
@@ -53,12 +59,21 @@ header nav a {
   text-decoration: none;
   font-family: Quicksand;
   font-size: 2vw;
-  color: rgba(24, 30, 81, 1);
+  color: whitesmoke;
 }
+/* main nav  a {
+  width: 15vw;
+  padding: 5px 2vw 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Quicksand;
+  font-size: 2vw;
+  color: rgba(24, 30, 81, 1);
+} */
 
 .hero {
   /* margin: 4rem; */
-  color: rgba(24, 30, 81, 1);
+  color:var(--main-text-color);
   font-size: 20px;
   padding: 4rem 10rem;
   /* height: 80vh; */
@@ -102,13 +117,14 @@ header nav a {
 .about {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   /* padding: 0 5vw; */
   align-items: center;
-  margin: auto;
+  /* margin: auto; */
 }
 .about img {
-  /* width: 40vw; */
-  height: 50vh;
+  width: 300px;
+  /* height: 50vh; */
   border-radius: 8px;
 }
 .about h2{
@@ -116,8 +132,8 @@ header nav a {
   font-weight: 700;
 }
 .extra {
-  margin: 0 auto;
-  width: 80vw;
+  /* margin: 0 auto; */
+  width: 40vw;
   /* text-align: center; */
 }
 .extra h2 {
@@ -150,7 +166,7 @@ header nav a {
   text-align: left;
 }
 .feature p{
-  width: 380px;
+  width: 330px;
   font-size: .9rem;
 }
 
@@ -287,4 +303,87 @@ footer button {
   .hero h1{
     font-size: 30px;
   }
+}
+.prodwrapper {
+  transition: all var(--transition-time);
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 2em;
+	margin-block: 4em;
+}
+
+.prodcard {
+  transition: all var(--transition-time);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	width: 18em;
+	height: 14em;
+	padding: 1em;
+	background: var(--main-bg-light-color);
+	border-radius: 1em;
+}
+.prodcard:hover {
+  transition: all 0.5s;
+	height: 17em;
+}
+
+.prodimage {
+  transition: all var(--transition-time);
+	position: absolute;
+	inset: 0.5em 0.5em 0em 0.5em;
+}
+.prodcard:hover .prodimage {
+  transition: all var(--transition-time);
+	position: absolute;
+	inset: -4em 2em 0em 2em;
+}
+
+.prodimg {
+  transition: all var(--transition-time);
+	max-width: 100%;
+	object-fit: cover;
+	border: 0em solid var(--main-bg-color);
+	border-radius: 0.8em;
+}
+.prodcard:hover .prodimg {
+  transition: all var(--transition-time);
+	border: 0.5em solid var(--main-bg-color);
+	border-radius: 1.2em;
+}
+
+.prodp {
+  transition: all var(--transition-time);
+	position: absolute;
+	top: 3em;
+	opacity: 0;
+}
+.prodcard:hover .prodp {
+  transition: all var(--transition-time);
+	transition-delay: 0.5s;
+	position: absolute;
+	top: 6em;
+	opacity: 1;
+}
+
+.prodbutton {
+	position: absolute;
+	bottom: 0.4em;
+	left: 50%;
+	translate: -50% 0;
+	padding: 0.25em 1em;
+	background: #ffa565;
+	outline: 0em solid var(--main-bg-color);
+	border-radius: 4em;
+  transition: all var(--transition-time);
+}
+.prodcard:hover .prodbutton {
+  transition: all var(--transition-time);
+	bottom: -1.3em;
+  cursor: pointer;
+	padding: 0.5em 2em;
+	outline: 0.5em solid var(--main-bg-color);
 }
