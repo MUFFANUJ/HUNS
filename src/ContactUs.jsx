@@ -44,8 +44,12 @@ function ContactUs() {
               <Form.Label>Name</Form.Label>
               <Form.Control
                 placeholder="Enter your name"
+
+                name="name"
+                // value={formData.name}
                 type="text" name="user_name"
-                value={formData.name}
+                
+
                 onChange={handleChange}
               />
             </Form.Group>
@@ -54,8 +58,13 @@ function ContactUs() {
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 placeholder="Enter your email"
+
+                name="email"
+                // value={formData.email}
+
                 type="email" name="user_email"
-                value={formData.email}
+
+
                 onChange={handleChange}
               />
             </Form.Group>
@@ -67,7 +76,7 @@ function ContactUs() {
                 rows={3}
                 placeholder="Enter your message"
                 name="message"
-                value={formData.message}
+                // value={formData.message}
                 onChange={handleChange}
               />
             </Form.Group>
