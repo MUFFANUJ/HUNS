@@ -7,11 +7,6 @@ import emailjs from '@emailjs/browser';
 function ContactUs() {
   const form = useRef();
   const navigate = useNavigate();
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,9 +18,20 @@ function ContactUs() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    var templateParams = {
+      name: 'Anuj Singh',
+      notes: 'Check this out im hero!',
+    };
     emailjs.sendForm('service_xdkkrkr', 'template_pxvq4y4', form.current, 'YYHtgp7__9NHK6z2K')
     .then((result) => {
       console.log("Successfully send")
+      emailjs.send('service_xdkkrkr', 'template_3wua8nm', templateParams).then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        })
       form.current.reset();
     }, (error) => {
       console.log("Unsuccessful" + error.text);
@@ -44,8 +50,6 @@ function ContactUs() {
               <Form.Label>Name</Form.Label>
               <Form.Control
                 placeholder="Enter your name"
-
-                name="name"
                 // value={formData.name}
                 type="text" name="user_name"
                 
@@ -58,10 +62,7 @@ function ContactUs() {
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 placeholder="Enter your email"
-
-                name="email"
                 // value={formData.email}
-
                 type="email" name="user_email"
 
 
