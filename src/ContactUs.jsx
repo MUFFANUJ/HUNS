@@ -37,7 +37,7 @@ function ContactUs() {
                 type="text"
                 placeholder="Enter your name"
                 name="name"
-                value={formData.name}
+                // value={formData.name}
                 onChange={handleChange}
               />
             </Form.Group>
@@ -48,7 +48,7 @@ function ContactUs() {
                 type="email"
                 placeholder="Enter your email"
                 name="email"
-                value={formData.email}
+                // value={formData.email}
                 onChange={handleChange}
               />
             </Form.Group>
@@ -60,7 +60,7 @@ function ContactUs() {
                 rows={3}
                 placeholder="Enter your message"
                 name="message"
-                value={formData.message}
+                // value={formData.message}
                 onChange={handleChange}
               />
             </Form.Group>
