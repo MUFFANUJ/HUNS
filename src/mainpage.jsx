@@ -28,7 +28,8 @@ function HomePage() {
       <section>
         <div className="hero">
           <h1>
-            <strong>Quality</strong> <span>Garments</span><br/>
+            <strong>Quality</strong> <span>Garments</span>
+            <br />
             <span>
               <strong>Affordable</strong> prices
             </span>

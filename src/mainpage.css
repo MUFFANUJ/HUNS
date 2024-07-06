@@ -1,16 +1,21 @@
 /* Reset some default styles */
+:root {
+  --main-bg-color: hsl(220, 18%, 13%);
+  --main-text-color: #ffffff;
+  --main-bg-light-color:#4E5155;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Lato";
+  font-family: "Rubik", sans-serif;
 }
 
 body {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   /* line-height: 1.6; */
-  background-color:#000435;
-  color: #333;
+  background:var(--main-bg-color);
+  color:var(--main-text-color);
 }
 
 section {
@@ -34,8 +39,8 @@ header {
 
 header .logo {
   width: 25vw;
-  color: #FF9933;
-  font-family: Quicksand;
+  color: whitesmoke;
+  font-family: "Rubik", sans-serif;
   font-weight: Bold;
   font-size: 5vw;
   text-align: center;
@@ -53,12 +58,21 @@ header nav a {
   text-decoration: none;
   font-family: Quicksand;
   font-size: 2vw;
-  color: rgba(24, 30, 81, 1);
+  color: whitesmoke;
 }
+/* main nav  a {
+  width: 15vw;
+  padding: 5px 2vw 5px 0px;
+  text-align: center;
+  text-decoration: none;
+  font-family: Quicksand;
+  font-size: 2vw;
+  color: rgba(24, 30, 81, 1);
+} */
 
 .hero {
   /* margin: 4rem; */
-  color: rgba(24, 30, 81, 1);
+  color:var(--main-text-color);
   font-size: 20px;
   padding: 4rem 10rem;
   /* height: 80vh; */
