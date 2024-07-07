@@ -14,7 +14,6 @@ import hoodie8 from "./assets/hoodie23.jpg";
 
 import tshirt from "./assets/Sd block front.jpg";
 import tshirt2 from "./assets/tiny einstein front.jpg";
-// import tshirt3 from "./assets/tshirtimg.jpg";
 import tshirt4 from "./assets/tshirtimg2.jpg";
 import tshirt5 from "./assets/tshirtimg3.jpg";
 import tshirt6 from "./assets/tshirtimg5.jpg";
@@ -31,8 +30,6 @@ import trouser8 from "./assets/man lower 5.webp";
 
 function Productpage({ option, setOption }) {
   const navigate = useNavigate();
-  const [selectedCategory, setSelectedCategory] = useState("All");
-
   const [showHoddie, setShowHoddie] = useState(true);
   const [showTshirt, setShowTshir] = useState(true);
   const [showLowers, setShowLowers] = useState(true);
@@ -41,7 +38,6 @@ function Productpage({ option, setOption }) {
     window.scrollTo(0, 0);
 
     if (option === "hoddies") {
-      console.log("yes");
       setShowHoddie(true);
       setShowTshir(false);
       setShowLowers(false);
@@ -58,48 +54,7 @@ function Productpage({ option, setOption }) {
       setShowTshir(true);
       setShowLowers(true);
     }
-  });
-
-  // Define product categories
-  const products = [
-    {
-      category: "Hoodies",
-      items: [
-        hoodie,
-        hoodie2,
-        hoodie3,
-        hoodie4,
-        hoodie5,
-        hoodie6,
-        hoodie7,
-        hoodie8,
-      ],
-    },
-    {
-      category: "T-shirts",
-      items: [
-        tshirt,
-        tshirt2,
-        /* tshirt3,*/ tshirt4,
-        tshirt5,
-        tshirt6,
-        tshirt7,
-      ],
-    },
-    {
-      category: "Trousers",
-      items: [
-        trouser,
-        trouser2,
-        trouser3,
-        trouser4,
-        trouser5,
-        trouser6,
-        trouser7,
-        trouser8,
-      ],
-    },
-  ];
+  }, [option]);
 
   const hoddies = [
     {
@@ -118,7 +73,7 @@ function Productpage({ option, setOption }) {
       color: "Brown,Beige",
       material: "Faux Swade",
     },
-    {
+        {
       title: "",
       imgURL: hoodie3,
       description: "Casual Wear",
@@ -168,7 +123,7 @@ function Productpage({ option, setOption }) {
     },
   ];
 
-  const tshirts = [
+   const tshirts = [
     {
       title: "",
       imgURL: tshirt,
@@ -294,33 +249,6 @@ function Productpage({ option, setOption }) {
     },
   ];
 
-  // Function to handle category change
-  const handleCategoryChange = (category) => {
-    setSelectedCategory(category);
-  };
-  // const handleOptionChange = (event) => {
-  //   if (event === 'hoddies') {
-  //     console.log("Hoddies")
-  //     setShowHoddie(true)
-  //     setShowTshir(false)
-  //     setShowLowers(false)
-  //   } else if (event === 'tshirts') {
-  //     console.log("T-Shirts")
-  //     setShowHoddie(false)
-  //     setShowTshir(true)
-  //     setShowLowers(false)
-  //   } else if (event === 'lowers') {
-  //     console.log("Lowers")
-  //     setShowHoddie(false)
-  //     setShowTshir(false)
-  //     setShowLowers(true)
-  //   }else if(event === "ALL"){
-  //     setShowHoddie(true)
-  //     setShowTshir(true)
-  //     setShowLowers(true)
-  //   }
-  // };
-
   return (
     <>
       <div style={{ margin: "40px" }}>
@@ -328,11 +256,6 @@ function Productpage({ option, setOption }) {
       </div>
       <div class="radiocontainer">
         <div class="selector">
-          {/* <div class="selector-item">
-            <input type="radio" id="radio1" name="selector" class="selector-item_radio"  value="hoddies"
-            onChange={()=>handleOptionChange("ALL")}/>
-            <label for="radio1" class="selector-item_label">ALL</label>
-        </div> */}
           <div class="selector-item">
             <input
               type="radio"
@@ -382,8 +305,7 @@ function Productpage({ option, setOption }) {
             return (
               <div class="prodcontainer">
                 <div class="propcard">
-                  <img class="card-img" src={item.imgURL} alt="Vans" />
-                  {/* <div class="card-img-overlay d-flex justify-content-end"> */}
+                  <img class="card-img" src={item.imgURL} alt="Product" />
                 </div>
                 <div class="card-body">
                   <h4 class="card-title">{item.title}</h4>
@@ -397,13 +319,10 @@ function Productpage({ option, setOption }) {
                   </div>
                 </div>
               </div>
-              // </div>
             );
           })}
         </div>
-      ) : (
-        ""
-      )}
+      ) : null}
 
       {showTshirt ? (
         <div className="products">
@@ -411,8 +330,7 @@ function Productpage({ option, setOption }) {
             return (
               <div class="prodcontainer">
                 <div class="propcard">
-                  <img class="card-img" src={item.imgURL} alt="Vans" />
-                  {/* <div class="card-img-overlay d-flex justify-content-end"> */}
+                  <img class="card-img" src={item.imgURL} alt="Product" />
                 </div>
                 <div class="card-body">
                   <h4 class="card-title">{item.title}</h4>
@@ -425,14 +343,11 @@ function Productpage({ option, setOption }) {
                     </div>
                   </div>
                 </div>
-                {/* </div> */}
               </div>
             );
           })}
         </div>
-      ) : (
-        ""
-      )}
+      ) : null}
 
       {showLowers ? (
         <div className="products">
@@ -440,8 +355,7 @@ function Productpage({ option, setOption }) {
             return (
               <div class="prodcontainer">
                 <div class="propcard">
-                  <img class="card-img" src={item.imgURL} alt="Vans" />
-                  {/* <div class="card-img-overlay d-flex justify-content-end"> */}
+                  <img class="card-img" src={item.imgURL} alt="Product" />
                 </div>
                 <div class="card-body">
                   <h4 class="card-title">{item.title}</h4>
@@ -455,13 +369,10 @@ function Productpage({ option, setOption }) {
                   </div>
                 </div>
               </div>
-              //  </div>
             );
           })}
         </div>
-      ) : (
-        ""
-      )}
+      ) : null}
     </>
   );
 }

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useRef } from "react";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { IoMdArrowRoundBack, IoMdPersonAdd } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
@@ -8,13 +8,9 @@ function ContactUs() {
   const form = useRef();
   const navigate = useNavigate();
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    // setFormData({
-    //   ...formData,
-    //   [name]: value
-    // });
-  };
+  // const handleChange = (e) => {
+  //   const { name, value } = e.target;
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -50,9 +46,6 @@ function ContactUs() {
         }
       );
   };
-
-  /* alighment of this page */
-
   return (
     <Container className="mt-5">
       <div style={{ margin: "60px" }}>
@@ -66,10 +59,9 @@ function ContactUs() {
               <Form.Label>Name</Form.Label>
               <Form.Control
                 placeholder="Enter your name"
-                // value={formData.name}
                 type="text"
                 name="user_name"
-                onChange={handleChange}
+                // onChange={handleChange}
               />
             </Form.Group>
 
@@ -77,10 +69,9 @@ function ContactUs() {
               <Form.Label>Email address</Form.Label>
               <Form.Control
                 placeholder="Enter your email"
-                // value={formData.email}
                 type="email"
                 name="user_email"
-                onChange={handleChange}
+                // onChange={handleChange}
               />
             </Form.Group>
 
@@ -91,8 +82,7 @@ function ContactUs() {
                 rows={3}
                 placeholder="Enter your message"
                 name="message"
-                // value={formData.message}
-                onChange={handleChange}
+                // onChange={handleChange}
               />
             </Form.Group>
 
