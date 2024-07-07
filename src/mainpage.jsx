@@ -79,30 +79,48 @@ function HomePage({ setOption }) {
       <section>
         <div className="features">
           <div className="feature">
-            <h3>Bulk orders made easy</h3>
-            <p>
-              Need to place a large order? We've got you covered. Our
+          <div class="cardfeature">
+  <div class="content">
+    <div class="front">
+    Bulk orders made easy
+    </div>
+    <div class="back">
+    Need to place a large order? We've got you covered. Our
               streamlined process and efficient production capabilities allow us
               to handle bulk orders with ease, ensuring timely delivery and
               consistent quality.
-            </p>
+    </div>
+  </div>
+</div>
           </div>
           <div className="feature">
-            <h3>Exceptional quality control</h3>
-            <p>
-              At our clothing manufacturing facility, we prioritize quality
+          <div class="cardfeature">
+  <div class="content">
+    <div class="front">
+    Exceptional quality control
+    </div>
+    <div class="back">
+    At our clothing manufacturing facility, we prioritize quality
               control at every stage of production. From fabric inspection to
               final packaging, we adhere to strict quality standards to ensure
-              that every garment meets your expectations.
-            </p>
+              that ev
+    </div>
+  </div>
+</div>
           </div>
           <div className="feature">
-            <h3>Fast and reliable shipping</h3>
-            <p>
-              We understand the importance of timely delivery. That's why we
+          <div class="cardfeature">
+  <div class="content">
+    <div class="front">
+    Fast and reliable shipping
+    </div>
+    <div class="back">
+    We understand the importance of timely delivery. That's why we
               have established reliable shipping partnerships to ensure your
               orders reach you on time, no matter where you are located.
-            </p>
+    </div>
+  </div>
+</div>
           </div>
         </div>
       </section>
