@@ -33,32 +33,30 @@ function Productpage({ option, setOption }) {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const [showHoddie,setShowHoddie] = useState(true)
-  const [showTshirt,setShowTshir] = useState(true)
-  const [showLowers,setShowLowers] = useState(true)
-
+  const [showHoddie, setShowHoddie] = useState(true);
+  const [showTshirt, setShowTshir] = useState(true);
+  const [showLowers, setShowLowers] = useState(true);
 
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    if (option === 'hoddies') {
-      console.log("yes")
-      setShowHoddie(true)
-      setShowTshir(false)
-      setShowLowers(false)
-    } else if (option === 'tshirts') {
-      setShowHoddie(false)
-      setShowTshir(true)
-      setShowLowers(false)
-    } else if (option === 'lowers') {
-      setShowHoddie(false)
-      setShowTshir(false)
-      setShowLowers(true)
-    }else if(option === "ALL"){
-      setShowHoddie(true)
-      setShowTshir(true)
-      setShowLowers(true)
-
+    if (option === "hoddies") {
+      console.log("yes");
+      setShowHoddie(true);
+      setShowTshir(false);
+      setShowLowers(false);
+    } else if (option === "tshirts") {
+      setShowHoddie(false);
+      setShowTshir(true);
+      setShowLowers(false);
+    } else if (option === "lowers") {
+      setShowHoddie(false);
+      setShowTshir(false);
+      setShowLowers(true);
+    } else if (option === "ALL") {
+      setShowHoddie(true);
+      setShowTshir(true);
+      setShowLowers(true);
     }
   });
 
@@ -79,7 +77,14 @@ function Productpage({ option, setOption }) {
     },
     {
       category: "T-shirts",
-      items: [tshirt, tshirt2,/* tshirt3,*/ tshirt4, tshirt5, tshirt6, tshirt7],
+      items: [
+        tshirt,
+        tshirt2,
+        /* tshirt3,*/ tshirt4,
+        tshirt5,
+        tshirt6,
+        tshirt7,
+      ],
     },
     {
       category: "Trousers",
@@ -318,7 +323,7 @@ function Productpage({ option, setOption }) {
 
   return (
     <>
-      <div  style={{ margin: "40px" }}>
+      <div style={{ margin: "40px" }}>
         <IoMdArrowRoundBack size={30} onClick={() => navigate("/HUNS")} />
       </div>
       <div class="radiocontainer">
@@ -375,101 +380,88 @@ function Productpage({ option, setOption }) {
         <div className="products">
           {hoddies.map((item) => {
             return (
-
               <div class="prodcontainer">
-      <div class="propcard" >
-        <img class="card-img" src={item.imgURL} alt="Vans" />
-        {/* <div class="card-img-overlay d-flex justify-content-end"> */}
+                <div class="propcard">
+                  <img class="card-img" src={item.imgURL} alt="Vans" />
+                  {/* <div class="card-img-overlay d-flex justify-content-end"> */}
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">{item.title}</h4>
+                  <p class="card-text">{item.description}</p>
+                  <p class="card-text">Sizes: {item.sizes}</p>
+                  <p class="card-text">Color: {item.color}</p>
+                  <div class="buy d-flex justify-content-between align-items-center">
+                    <div class="price text-success">
+                      <h5 class="mt-4">{item.material}</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              // </div>
+            );
+          })}
         </div>
-        <div class="card-body">
-          <h4 class="card-title" >{item.title}</h4>
-          <p class="card-text">
-            {item.description}
-          </p>
-          <p class="card-text">
-            Sizes: {item.sizes}
-          </p>
-          <p class="card-text">
-            Color: {item.color}
-          </p>
-          <div class="buy d-flex justify-content-between align-items-center">
-            <div class="price text-success"><h5 class="mt-4">{item.material}</h5></div>
-          </div>
-        </div>
-      </div>
-    // </div>
-            )
-          })
-        }
-      </div>
-      ):("")}
+      ) : (
+        ""
+      )}
 
       {showTshirt ? (
         <div className="products">
           {tshirts.map((item) => {
             return (
-
               <div class="prodcontainer">
-      <div class="propcard">
-        <img class="card-img" src={item.imgURL} alt="Vans" />
-        {/* <div class="card-img-overlay d-flex justify-content-end"> */}
+                <div class="propcard">
+                  <img class="card-img" src={item.imgURL} alt="Vans" />
+                  {/* <div class="card-img-overlay d-flex justify-content-end"> */}
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">{item.title}</h4>
+                  <p class="card-text">{item.description}</p>
+                  <p class="card-text">Sizes: {item.sizes}</p>
+                  <p class="card-text">Color: {item.color}</p>
+                  <div class="buy d-flex justify-content-between align-items-center">
+                    <div class="price text-success">
+                      <h5 class="mt-4">{item.material}</h5>
+                    </div>
+                  </div>
+                </div>
+                {/* </div> */}
+              </div>
+            );
+          })}
         </div>
-        <div class="card-body">
-          <h4 class="card-title">{item.title}</h4>
-          <p class="card-text">
-            {item.description}
-          </p>
-          <p class="card-text">
-            Sizes: {item.sizes}
-          </p>
-          <p class="card-text">
-            Color: {item.color}
-          </p>
-          <div class="buy d-flex justify-content-between align-items-center">
-            <div class="price text-success"><h5 class="mt-4">{item.material}</h5></div>
-          </div>
-        </div>
-      {/* </div> */}
-     </div>
-            )
-          })
-        }
-      </div>
-      ):("")}
+      ) : (
+        ""
+      )}
 
       {showLowers ? (
         <div className="products">
           {lowers.map((item) => {
             return (
-
               <div class="prodcontainer">
-      <div class="propcard" >
-        <img class="card-img" src={item.imgURL} alt="Vans" />
-        {/* <div class="card-img-overlay d-flex justify-content-end"> */}
+                <div class="propcard">
+                  <img class="card-img" src={item.imgURL} alt="Vans" />
+                  {/* <div class="card-img-overlay d-flex justify-content-end"> */}
+                </div>
+                <div class="card-body">
+                  <h4 class="card-title">{item.title}</h4>
+                  <p class="card-text">{item.description}</p>
+                  <p class="card-text">Sizes: {item.sizes}</p>
+                  <p class="card-text">Color: {item.color}</p>
+                  <div class="buy d-flex justify-content-between align-items-center">
+                    <div class="price text-success">
+                      <h5 class="mt-4">{item.material}</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              //  </div>
+            );
+          })}
         </div>
-        <div class="card-body">
-          <h4 class="card-title">{item.title}</h4>
-          <p class="card-text">
-            {item.description}
-          </p>
-          <p class="card-text">
-            Sizes: {item.sizes}
-          </p>
-          <p class="card-text">
-            Color: {item.color}
-          </p>
-          <div class="buy d-flex justify-content-between align-items-center">
-            <div class="price text-success"><h5 class="mt-4">{item.material}</h5></div>
-          </div>
-        </div>
-      </div>
-    //  </div>
-            )
-          })
-        }
-      </div>
-      ):("")}
-
+      ) : (
+        ""
+      )}
     </>
   );
 }

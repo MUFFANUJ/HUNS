@@ -51,11 +51,11 @@ function ContactUs() {
       );
   };
 
-/* alighment of this page */
+  /* alighment of this page */
 
   return (
     <Container className="mt-5">
-      <div  style={{ margin: "60px" }}>
+      <div style={{ margin: "60px" }}>
         <IoMdArrowRoundBack size={30} onClick={() => navigate("/HUNS")} />
       </div>
       <Row className="justify-content-md-center">
@@ -96,7 +96,8 @@ function ContactUs() {
               />
             </Form.Group>
 
-            <Button style={{ backgroundColor: "orange" }}
+            <Button
+              style={{ backgroundColor: "orange" }}
               variant="primary"
               type="submit"
               className="mt-3"

@@ -1,8 +1,7 @@
-
 :root {
   --main-bg-color: hsl(220, 18%, 13%);
   --main-text-color: #ffffff;
-  --main-bg-light-color:#4E5155;
+  --main-bg-light-color: #4e5155;
   --transition-time: 0.5s;
 }
 * {
@@ -10,29 +9,26 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
-  
 }
-.logo img{
-  width: 100% ;
+.logo img {
+  width: 100%;
   padding-left: 30px;
 }
 
 body {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  /* line-height: 1.6; */
-  background:var(--main-bg-color);
-  color:var(--main-text-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: var(--main-bg-color);
+  color: var(--main-text-color);
 }
-.wedo{
+.wedo {
   margin-top: 200px;
   margin-bottom: 120px;
 }
 section {
-  /* height: 90vh; */
   width: 100vw;
   margin-bottom: 100px;
 }
-.why{
+.why {
   padding-bottom: 50px;
 }
 
@@ -68,41 +64,29 @@ header nav a {
   font-size: 2vw;
   color: whitesmoke;
 }
-/* main nav  a {
-  width: 15vw;
-  padding: 5px 2vw 5px 0px;
-  text-align: center;
-  text-decoration: none;
-  font-family: Quicksand;
-  font-size: 2vw;
-  color: rgba(24, 30, 81, 1);
-} */
+
 
 .hero {
-  /* margin: 4rem; */
-  color:var(--main-text-color);
+  color: var(--main-text-color);
   font-size: 20px;
   padding: 4rem 10rem;
-  /* height: 80vh; */
-  /* text-align: center; */
 }
 
 .hero h1 {
-  color: #FF9933;
+  color: #ff9933;
   font-size: 2.5em;
 }
-.hero h1 strong{
-  color: #FF9933;
+.hero h1 strong {
+  color: #ff9933;
 }
-.garments{
+.garments {
   color: white;
 }
-.price{
+.price {
   color: white;
 }
 .hero h1 span {
   color: white;
-
 }
 
 .hero p {
@@ -125,30 +109,25 @@ header nav a {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  /* padding: 0 5vw; */
   align-items: center;
-  /* margin: auto; */
 }
 .about img {
   width: 400px;
-  /* height: 50vh; */
   border-radius: 8px;
 }
-.about h2{
+.about h2 {
   font-size: 3.5rem;
   font-weight: 700;
 }
 .extra {
-  /* margin: 0 auto; */
   width: 40vw;
-  /* text-align: center; */
 }
 .extra h2 {
   font-size: 2.5rem;
   width: 40vw;
 }
-.extra p{
-  font-size: .85rem;
+.extra p {
+  font-size: 0.85rem;
   width: 50vw;
 }
 .features {
@@ -168,16 +147,16 @@ header nav a {
   border-radius: 20px;
   padding: 50px 50px;
   margin: 10px 45px;
-  color: #FF9933;
+  color: #ff9933;
   font-size: 35px;
   text-align: left;
 }
-.feature p{
+.feature p {
   width: 330px;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
-.product-tag{
+.product-tag {
   font-weight: 800;
   font-family: sans-serif;
   text-align: start;
@@ -201,7 +180,7 @@ header nav a {
   height: 100%;
   object-fit: contain;
 }
-.product p{
+.product p {
   font-size: 2.5rem;
   font-weight: 700;
   font-family: monospace;
@@ -211,23 +190,20 @@ header nav a {
   width: 100vw;
   margin: 0 auto;
   padding: 20px;
-  /* text-align: center; */
 }
 
 .faq h2 {
-  /* text-align: center; */
-  padding:10px 40px;
+  padding: 10px 40px;
   font-weight: 700;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .faq-item {
   margin-bottom: 15px;
-  padding:0px 40px;
+  padding: 0px 40px;
   cursor: pointer;
   overflow: hidden;
   transition: max-height 0.5s ease;
-  /* text-align: center; */
 }
 
 .faq-item h3 {
@@ -266,10 +242,10 @@ footer button {
 }
 
 @media (max-width: 768px) {
-  .hero{
+  .hero {
     padding: 4rem 6rem;
   }
-  .hero h1{
+  .hero h1 {
     width: 54vw;
     font-size: 30px;
   }
@@ -278,7 +254,7 @@ footer button {
     font-size: 0.87rem;
   }
 
-  .feature p{
+  .feature p {
     width: 380px;
   }
   .features,
@@ -291,11 +267,11 @@ footer button {
     flex: 1 1 100%;
     margin: 10px 0;
   }
-  .extra h2{
+  .extra h2 {
     font-size: 1.7rem;
   }
-  .extra p{
-    font-size: .7rem;
+  .extra p {
+    font-size: 0.7rem;
   }
   .about img {
     width: 40vw;
@@ -316,10 +292,8 @@ footer button {
 }
 
 @media (max-width: 550px) {
-  .hero{
-
+  .hero {
     padding: 4rem 4rem;
-
   }
   header .logo {
     width: 100px;
@@ -327,11 +301,11 @@ footer button {
   header nav a {
     font-size: 15px;
   }
-  .hero h1{
+  .hero h1 {
     font-size: 30px;
   }
 
-  .about img{
+  .about img {
     width: 45vw;
   }
 
@@ -343,100 +317,97 @@ footer button {
     padding: 0 6vw;
     gap: 20px;
   }
-  .extra h2{
+  .extra h2 {
     font-size: 1.7rem;
     width: 60vw;
   }
-  .product-tag{
+  .product-tag {
     font-size: 2.5rem;
   }
-
 }
 .prodwrapper {
   transition: all var(--transition-time);
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 2em;
-	margin-block: 4em;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin-block: 4em;
 }
 
 .prodcard {
   transition: all var(--transition-time);
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	width: 18em;
-	height: 14em;
-	padding: 1em;
-	background: var(--main-bg-light-color);
-	border-radius: 1em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 18em;
+  height: 14em;
+  padding: 1em;
+  background: var(--main-bg-light-color);
+  border-radius: 1em;
 }
 .prodcard:hover {
   transition: all 0.5s;
-	height: 17em;
+  height: 17em;
 }
 
 .prodimage {
   transition: all var(--transition-time);
-	position: absolute;
-	inset: 0.5em 0.5em 0em 0.5em;
+  position: absolute;
+  inset: 0.5em 0.5em 0em 0.5em;
 }
 .prodcard:hover .prodimage {
   transition: all var(--transition-time);
-	position: absolute;
-	inset: -4em 2em 0em 2em;
-
+  position: absolute;
+  inset: -4em 2em 0em 2em;
 }
 
 .prodimg {
   transition: all var(--transition-time);
-	max-width: 100%;
-	object-fit: cover;
-	border: 0em solid var(--main-bg-color);
-	border-radius: 0.8em;
+  max-width: 100%;
+  object-fit: cover;
+  border: 0em solid var(--main-bg-color);
+  border-radius: 0.8em;
 }
 .prodcard:hover .prodimg {
   transition: all var(--transition-time);
-	border: 0.5em solid var(--main-bg-color);
-	border-radius: 1.2em;
+  border: 0.5em solid var(--main-bg-color);
+  border-radius: 1.2em;
 }
 
 .prodp {
   transition: all var(--transition-time);
-	position: absolute;
-	top: 3em;
-	opacity: 0;
+  position: absolute;
+  top: 3em;
+  opacity: 0;
 }
 .prodcard:hover .prodp {
   transition: all var(--transition-time);
-	transition-delay: 0.5s;
-	position: absolute;
-	top: 6em;
-	opacity: 1;
+  transition-delay: 0.5s;
+  position: absolute;
+  top: 6em;
+  opacity: 1;
 }
 
 .prodbutton {
-	position: absolute;
-	bottom: 0.4em;
-	left: 50%;
-	translate: -50% 0;
-	padding: 0.25em 1em;
-	background: #ffa565;
-	outline: 0em solid var(--main-bg-color);
-	border-radius: 4em;
+  position: absolute;
+  bottom: 0.4em;
+  left: 50%;
+  translate: -50% 0;
+  padding: 0.25em 1em;
+  background: #ffa565;
+  outline: 0em solid var(--main-bg-color);
+  border-radius: 4em;
   transition: all var(--transition-time);
 }
 .prodcard:hover .prodbutton {
   transition: all var(--transition-time);
-	bottom: -1.3em;
+  bottom: -1.3em;
   cursor: pointer;
-	padding: 0.5em 2em;
-	outline: 0.5em solid var(--main-bg-color);
+  padding: 0.5em 2em;
+  outline: 0.5em solid var(--main-bg-color);
 }
-
 
 /* card */
 .cardfeature {
@@ -450,29 +421,27 @@ footer button {
   position: absolute;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 
   transition: transform 1s;
   transform-style: preserve-3d;
 }
 
 .cardfeature:hover .content {
-  transform: rotateY( 180deg ) ;
+  transform: rotateY(180deg);
   transition: transform 0.5s;
 }
 .cardfeature:active .content {
-  transform: rotateY( 180deg ) ;
+  transform: rotateY(180deg);
   transition: transform 0.5s;
 }
-
 
 .back {
   position: absolute;
   height: 100%;
   width: 100%;
   background: white;
-  /* line-height: 300px; */
-  color: #03446A;
+  color: #03446a;
   text-align: center;
   font-size: 18px;
   border-radius: 5px;
@@ -482,12 +451,11 @@ footer button {
   align-items: center;
 }
 
-.front{
+.front {
   position: absolute;
   height: 100%;
   width: 100%;
-  /* background: white; */
-  color: #03446A;
+  color: #03446a;
   text-align: center;
   font-size: 45px;
   border-radius: 5px;
@@ -498,16 +466,16 @@ footer button {
   background-size: cover;
 }
 .back {
-  background: #03446A;
+  background: #03446a;
   color: white;
-  transform: rotateY( 180deg );
+  transform: rotateY(180deg);
 }
-.front-b{
+.front-b {
   background-image: url("./assets/Bulk.png");
 }
-.front-e{
+.front-e {
   background-image: url("./assets/Quality.png");
 }
-.front-f{
+.front-f {
   background-image: url("./assets/Fast.png");
 }

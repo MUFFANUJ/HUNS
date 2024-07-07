@@ -1,14 +1,14 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./mainpage.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+
 import Logo from "./assets/huns logo white.png";
 import Why from "./assets/landing page why us.jpg";
 import Brochure from "./assets/huns-brochure.pdf";
 import Hoodie from "./assets/Hoodie.png";
 import Tshirt from "./assets/Tshirt.png";
 import Trouser from "./assets/lowers.png";
-
 
 function HomePage({ setOption }) {
   const navigate = useNavigate();
@@ -174,11 +174,7 @@ function HomePage({ setOption }) {
               quality without breaking the bank.
             </p>
             <div class="prodimage">
-              <img
-                src={Trouser}
-                className="prodimg"
-                alt=""
-              />
+              <img src={Trouser} className="prodimg" alt="" />
             </div>
             <div class="prodbutton" onClick={() => navigateToProduct("lowers")}>
               Lowers
