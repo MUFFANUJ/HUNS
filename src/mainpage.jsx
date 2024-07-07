@@ -2,13 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./mainpage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import hoodie from "./assets/Designer.png";
-import Logo from "./assets/Huns logo .png";
-import Icon from "./assets/business.png";
+import Logo from "./assets/huns logo white.png";
 import Why from "./assets/landing page why us.jpg";
-// import Quality from "./assets/Quality.png";
-// import Bulk from "./assets/Bulk.png";
-// import Fast from "./assets/Fast.png";
+import Brochure from "./assets/huns-brochure.pdf";
+import Hoodie from "./assets/Hoodie.png";
+import Tshirt from "./assets/Tshirt.png";
+import Trouser from "./assets/lowers.png";
+
 
 function HomePage({ setOption }) {
   const navigate = useNavigate();
@@ -27,7 +27,7 @@ function HomePage({ setOption }) {
           <img src={Logo} />
         </div>
         <nav>
-          <a href="#" download="brochure">
+          <a href={Brochure} download="HUNS-Brochure">
             Brochure
           </a>
           {/* <a href="#" onClick={navigateToContact}>
@@ -57,6 +57,7 @@ function HomePage({ setOption }) {
       </section>
       <section>
         <h2
+          className="why"
           style={{ textAlign: "center", fontSize: "700", fontSize: "3.5rem" }}
         >
           Why Us?
@@ -100,7 +101,9 @@ function HomePage({ setOption }) {
           <div className="feature">
             <div class="cardfeature">
               <div class="content">
-                <div class="front front-e">{/*Exceptional quality control*/}</div>
+                <div class="front front-e">
+                  {/*Exceptional quality control*/}
+                </div>
                 <div class="back">
                   At our clothing manufacturing facility, we prioritize quality
                   control at every stage of production. From fabric inspection
@@ -113,7 +116,9 @@ function HomePage({ setOption }) {
           <div className="feature">
             <div class="cardfeature">
               <div class="content">
-                <div class="front front-f">{/*Fast and reliable shipping*/}</div>
+                <div class="front front-f">
+                  {/*Fast and reliable shipping*/}
+                </div>
                 <div class="back">
                   We understand the importance of timely delivery. That's why we
                   have established reliable shipping partnerships to ensure your
@@ -135,7 +140,7 @@ function HomePage({ setOption }) {
               hoodie to elevate your wardrobe.
             </p>
             <div class="prodimage">
-              {/* <img src={hoodie} className="prodimg" alt="" /> */}
+              <img src={Hoodie} className="prodimg" alt="" />
             </div>
             <div
               class="prodbutton"
@@ -152,7 +157,7 @@ function HomePage({ setOption }) {
               upgrade your collection with the best t-shirts around.
             </p>
             <div class="prodimage">
-              {/* <img  className="prodimg" alt="" /> */}
+              <img src={Tshirt} className="prodimg" alt="" />
             </div>
             <div
               class="prodbutton"
@@ -169,11 +174,11 @@ function HomePage({ setOption }) {
               quality without breaking the bank.
             </p>
             <div class="prodimage">
-              {/* <img
-                src="https://assets.codepen.io/4787486/kittens-1.jpg"
+              <img
+                src={Trouser}
                 className="prodimg"
                 alt=""
-              /> */}
+              />
             </div>
             <div class="prodbutton" onClick={() => navigateToProduct("lowers")}>
               Lowers

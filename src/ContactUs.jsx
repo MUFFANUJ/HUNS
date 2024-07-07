@@ -51,13 +51,15 @@ function ContactUs() {
       );
   };
 
+/* alighment of this page */
+
   return (
     <Container className="mt-5">
-      <div  style={{ margin: "40px" }}>
+      <div  style={{ margin: "60px" }}>
         <IoMdArrowRoundBack size={30} onClick={() => navigate("/HUNS")} />
       </div>
       <Row className="justify-content-md-center">
-        <Col md="6">
+        <Col md="6" style={{ padding: "35px" }}>
           <h1>Contact Us</h1>
           <Form ref={form} onSubmit={handleSubmit}>
             <Form.Group controlId="formName">
@@ -94,7 +96,7 @@ function ContactUs() {
               />
             </Form.Group>
 
-            <Button
+            <Button style={{ backgroundColor: "orange" }}
               variant="primary"
               type="submit"
               className="mt-3"
