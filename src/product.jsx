@@ -318,8 +318,8 @@ function Productpage({ option, setOption }) {
 
   return (
     <>
-      <div onClick={() => navigate("/HUNS")} style={{ margin: "40px" }}>
-        <IoMdArrowRoundBack size={30} />
+      <div  style={{ margin: "40px" }}>
+        <IoMdArrowRoundBack size={30} onClick={() => navigate("/HUNS")} />
       </div>
       <div class="radiocontainer">
         <div class="selector">

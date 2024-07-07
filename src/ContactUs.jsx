@@ -53,8 +53,8 @@ function ContactUs() {
 
   return (
     <Container className="mt-5">
-      <div onClick={() => navigate("/HUNS")} style={{ margin: "40px" }}>
-        <IoMdArrowRoundBack size={30} />
+      <div  style={{ margin: "40px" }}>
+        <IoMdArrowRoundBack size={30} onClick={() => navigate("/HUNS")} />
       </div>
       <Row className="justify-content-md-center">
         <Col md="6">
@@ -107,7 +107,7 @@ function ContactUs() {
       </Row>
       <Row className="justify-content-md-center mt-3">
         <Col md="6" className="text-center">
-          <a href="https://wa.me/" className="btn btn-success">
+          <a href="https://wa.me/8968169361" className="btn btn-success">
             Contact us on WhatsApp
           </a>
         </Col>
