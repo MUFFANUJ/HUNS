@@ -344,7 +344,7 @@ footer button {
   width: 18em;
   height: 14em;
   padding: 1em;
-  background: var(--main-bg-light-color);
+  background-color: var(--main-bg-color);
   border-radius: 1em;
 }
 .prodcard:hover {
@@ -367,7 +367,7 @@ footer button {
   transition: all var(--transition-time);
   max-width: 100%;
   object-fit: cover;
-  border: 0em solid var(--main-bg-color);
+  /* border: 0em solid var(--main-bg-color); */
   border-radius: 0.8em;
 }
 .prodcard:hover .prodimg {
