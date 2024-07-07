@@ -24,7 +24,7 @@ function HomePage({ setOption }) {
     <div className="container">
       <header>
         <div className="logo">
-          <img src={Logo} />
+          <img src={Logo} alt="huns-logo" />
         </div>
         <nav>
           <a href={Brochure} download="HUNS-Brochure">
