@@ -20,7 +20,7 @@ body {
 }
 
 section {
-  height: 90vh;
+  /* height: 90vh; */
   width: 100vw;
 }
 
@@ -293,6 +293,9 @@ footer button {
 }
 
 @media (max-width: 550px) {
+  .hero{
+    padding: 4rem 3rem;
+  }
   header .logo {
     width: 80px;
     font-size: 15px;
@@ -302,6 +305,16 @@ footer button {
   }
   .hero h1{
     font-size: 30px;
+  }
+  .extra h2{
+    font-size: 1.8rem;
+  }
+  .about{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .about img{
+    width: 35vw;
   }
 }
 .prodwrapper {
