@@ -13,6 +13,8 @@
 html,body{
     width:100%;
     height:100%;
+    padding: 0px;
+    margin: 0px;
 }
 .main-box-container {
   width: 100%;
@@ -200,6 +202,26 @@ h6 {
 }
 @media (max-width:480px) {
 .selector{
-  width: 90%;
+  width: 76%;
+}
+.products{
+  flex-direction: row;
+  gap: 5px;
+}
+.prodcontainer{
+  width: 150px;
+  font-size: .8rem;
+  gap: 0;
+  padding: 10px 0px;
+}
+.propcard{
+  width: 150px;
+  background-color: rgb(144, 146, 147);
+}
+.propcard img{
+  width: 150px;
+  height: 250px;
+  object-fit: cover;
 }
 }
+

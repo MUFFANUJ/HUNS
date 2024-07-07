@@ -28,7 +28,6 @@ import trouser8 from "./assets/man lower 5.webp";
 function Productpage({option,setOption}) {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedOption, setSelectedOption] = useState('');
   const [showHoddie,setShowHoddie] = useState(true)
   const [showTshirt,setShowTshir] = useState(true)
   const [showLowers,setShowLowers] = useState(true)
@@ -37,6 +36,7 @@ function Productpage({option,setOption}) {
   useEffect(()=>{
     window.scrollTo(0, 0);
     if (option === 'hoddies') {
+      console.log("yes")
       setShowHoddie(true)
       setShowTshir(false)
       setShowLowers(false)
@@ -151,9 +151,9 @@ function Productpage({option,setOption}) {
           hoddies.map((item)=>{
             return (
               <div class="prodcontainer">
-      <div class="card" style={{width:"300px"}}>
-        <img class="card-img" src={item.imgURL} alt="Vans" style={{width:"300px",height:"250px",objectFit:"cover"}}/>
-        <div class="card-img-overlay d-flex justify-content-end">
+      <div class="propcard" >
+        <img class="card-img" src={item.imgURL} alt="Vans" />
+        {/* <div class="card-img-overlay d-flex justify-content-end"> */}
         </div>
         <div class="card-body">
           <h4 class="card-title">{item.title}</h4>
@@ -171,7 +171,7 @@ function Productpage({option,setOption}) {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
             )
           })
         }
@@ -183,9 +183,9 @@ function Productpage({option,setOption}) {
           tshirts.map((item)=>{
             return (
               <div class="prodcontainer">
-      <div class="card" style={{width:"300px"}}>
-        <img class="card-img" src={item.imgURL} alt="Vans" style={{width:"300px",height:"250px",objectFit:"cover"}}/>
-        <div class="card-img-overlay d-flex justify-content-end">
+      <div class="propcard">
+        <img class="card-img" src={item.imgURL} alt="Vans" />
+        {/* <div class="card-img-overlay d-flex justify-content-end"> */}
         </div>
         <div class="card-body">
           <h4 class="card-title">{item.title}</h4>
@@ -202,8 +202,8 @@ function Productpage({option,setOption}) {
             <div class="price text-success"><h5 class="mt-4">{item.price}</h5></div>
           </div>
         </div>
-      </div>
-    </div>
+      {/* </div> */}
+     </div>
             )
           })
         }
@@ -215,9 +215,9 @@ function Productpage({option,setOption}) {
           lowers.map((item)=>{
             return (
               <div class="prodcontainer">
-      <div class="card" style={{width:"300px"}}>
-        <img class="card-img" src={item.imgURL} alt="Vans" style={{width:"300px",height:"250px",objectFit:"cover"}}/>
-        <div class="card-img-overlay d-flex justify-content-end">
+      <div class="propcard" >
+        <img class="card-img" src={item.imgURL} alt="Vans" />
+        {/* <div class="card-img-overlay d-flex justify-content-end"> */}
         </div>
         <div class="card-body">
           <h4 class="card-title">{item.title}</h4>
@@ -235,7 +235,7 @@ function Productpage({option,setOption}) {
           </div>
         </div>
       </div>
-    </div>
+    //  </div>
             )
           })
         }
