@@ -1,8 +1,4 @@
-/* Reset some default styles */
-/* landing page pe bg img 
-  why us 
-  alighnment of the divs 
-   */
+
 :root {
   --main-bg-color: hsl(220, 18%, 13%);
   --main-text-color: #ffffff;
@@ -15,6 +11,9 @@
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
   
+}
+.logo img{
+  width: 100% ;
 }
 
 body {

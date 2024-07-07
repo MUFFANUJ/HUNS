@@ -2,7 +2,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./mainpage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import hoodie from "./assets/demo.png"
+import hoodie from "./assets/demo.png";
+import Logo from "./assets/Huns logo .png";
 function HomePage({ setOption }) {
   const navigate = useNavigate();
   const navigateToContact = () => {
@@ -16,9 +17,9 @@ function HomePage({ setOption }) {
   return (
     <div className="container">
       <header>
-        <div className="logo">HUNS</div>
+        <div className="logo"><img src={Logo}/></div>
         <nav>
-          <a href="#">Brochure</a>
+          <a href="#" download="brochure">Brochure</a>
           {/* <a href="#" onClick={navigateToContact}>
             Contact
           </a> */}
