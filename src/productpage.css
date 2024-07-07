@@ -16,85 +16,7 @@ html,body{
     padding: 0px;
     margin: 0px;
 }
-.main-box-container {
-  width: 100%;
-  height: 100vh;
-  min-height: 380px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.anime {
-  color: #fff;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 40px;
-  margin: 10px 0;
-}
-
-.anime-img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transition-duration: 500ms;
-  top: 0;
-  left: 0;
-  z-index: -4;
-}
-
-.box-container {
-  position: relative;
-  z-index: 11;
-  padding: 20px;
-  width: 290px;
-  height: 390px;
-  background: rgba(255, 246, 215, 1);
-  background-size: cover;
-  border-radius: 20px;
-  transition-duration: 500ms;
-  overflow: hidden;
-  box-shadow: 1px 1px 60px 0px black;
-}
-
-.box-container:hover {
-  background-size: 1500px;
-  scale: 1.05;
-}
-
-.box-container p {
-  transform: translate(500px, 0px);
-  transition-duration: 700ms;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-}
-
-.box-container:hover p {
-  transform: translate(0px, 0px);
-}
-
-.box-container:hover img {
-  opacity: 0;
-  width: 400%;
-  height: 400%;
-}
-
-h6 {
-  display: inline-block;
-  background: #fff;
-  margin: 10px 0px;
-  z-index: 11;
-  font-size: 18px;
-  padding: 10px 30px;
-  transform: translate(0px, 300px);
-  transition-duration: 500ms;
-}
-
-.box-container:hover h6 {
-  transform: translate(0px, 0px);
-}
 
 /* Styles for the product display */
 .products {
@@ -210,7 +132,7 @@ h6 {
   gap: 0;
   padding: 0px 0px;
   width: 250px;
-  background-color: rgb(144, 146, 147);
+  background-color: hsl(180, 6%, 3%);
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
@@ -228,6 +150,7 @@ h6 {
 .card-text{
   display: flex;
   flex-wrap: wrap;
+  padding-left: 10px;
 }
 .products{
   flex-direction: row;
@@ -253,5 +176,7 @@ h6 {
 }
 }
 .mt-4{
-  color: orange;
+  color: rgb(251, 172, 26);
+  padding-left: 10px;
 }
+

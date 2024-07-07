@@ -387,6 +387,7 @@ footer button {
   transition: all var(--transition-time);
 	position: absolute;
 	inset: -4em 2em 0em 2em;
+
 }
 
 .prodimg {
@@ -484,18 +485,28 @@ footer button {
   position: absolute;
   height: 100%;
   width: 100%;
-  background: white;
+  /* background: white; */
   color: #03446A;
   text-align: center;
-  font-size: 40px;
+  font-size: 45px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
   backface-visibility: hidden;
+  background-size: cover;
 }
 .back {
   background: #03446A;
   color: white;
   transform: rotateY( 180deg );
+}
+.front-b{
+  background-image: url("./assets/Bulk.png");
+}
+.front-e{
+  background-image: url("./assets/Quality.png");
+}
+.front-f{
+  background-image: url("./assets/Fast.png");
 }

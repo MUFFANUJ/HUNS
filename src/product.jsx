@@ -14,7 +14,7 @@ import hoodie8 from "./assets/hoodie23.jpg";
 
 import tshirt from "./assets/Sd block front.jpg";
 import tshirt2 from "./assets/tiny einstein front.jpg";
-import tshirt3 from "./assets/tshirtimg.jpg";
+// import tshirt3 from "./assets/tshirtimg.jpg";
 import tshirt4 from "./assets/tshirtimg2.jpg";
 import tshirt5 from "./assets/tshirtimg3.jpg";
 import tshirt6 from "./assets/tshirtimg5.jpg";
@@ -79,7 +79,7 @@ function Productpage({ option, setOption }) {
     },
     {
       category: "T-shirts",
-      items: [tshirt, tshirt2, tshirt3, tshirt4, tshirt5, tshirt6, tshirt7],
+      items: [tshirt, tshirt2,/* tshirt3,*/ tshirt4, tshirt5, tshirt6, tshirt7],
     },
     {
       category: "Trousers",
@@ -180,14 +180,14 @@ function Productpage({ option, setOption }) {
       color: "Leaf green",
       material: "Cotton",
     },
-    {
-      title: "",
-      imgURL: tshirt3,
-      description: "",
-      sizes: "",
-      color: "",
-      material: "",
-    },
+    // {
+    //   title: "",
+    //   imgURL: tshirt3,
+    //   description: "",
+    //   sizes: "",
+    //   color: "",
+    //   material: "",
+    // },
     {
       title: "",
       imgURL: tshirt4,
@@ -382,7 +382,7 @@ function Productpage({ option, setOption }) {
         {/* <div class="card-img-overlay d-flex justify-content-end"> */}
         </div>
         <div class="card-body">
-          <h4 class="card-title">{item.title}</h4>
+          <h4 class="card-title" >{item.title}</h4>
           <p class="card-text">
             {item.description}
           </p>

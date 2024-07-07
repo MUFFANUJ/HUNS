@@ -6,6 +6,9 @@ import hoodie from "./assets/Designer.png";
 import Logo from "./assets/Huns logo .png";
 import Icon from "./assets/business.png";
 import Why from "./assets/landing page why us.jpg";
+// import Quality from "./assets/Quality.png";
+// import Bulk from "./assets/Bulk.png";
+// import Fast from "./assets/Fast.png";
 
 function HomePage({ setOption }) {
   const navigate = useNavigate();
@@ -84,7 +87,7 @@ function HomePage({ setOption }) {
           <div className="feature">
             <div class="cardfeature">
               <div class="content">
-                <div class="front">Bulk orders made easy</div>
+                <div class="front front-b">{/*Bulk orders made easy*/}</div>
                 <div class="back">
                   Need to place a large order? We've got you covered. Our
                   streamlined process and efficient production capabilities
@@ -97,7 +100,7 @@ function HomePage({ setOption }) {
           <div className="feature">
             <div class="cardfeature">
               <div class="content">
-                <div class="front">Exceptional quality control</div>
+                <div class="front front-e">{/*Exceptional quality control*/}</div>
                 <div class="back">
                   At our clothing manufacturing facility, we prioritize quality
                   control at every stage of production. From fabric inspection
@@ -110,7 +113,7 @@ function HomePage({ setOption }) {
           <div className="feature">
             <div class="cardfeature">
               <div class="content">
-                <div class="front">Fast and reliable shipping</div>
+                <div class="front front-f">{/*Fast and reliable shipping*/}</div>
                 <div class="back">
                   We understand the importance of timely delivery. That's why we
                   have established reliable shipping partnerships to ensure your
@@ -132,7 +135,7 @@ function HomePage({ setOption }) {
               hoodie to elevate your wardrobe.
             </p>
             <div class="prodimage">
-              <img src={hoodie} className="prodimg" alt="" />
+              {/* <img src={hoodie} className="prodimg" alt="" /> */}
             </div>
             <div
               class="prodbutton"
@@ -149,7 +152,7 @@ function HomePage({ setOption }) {
               upgrade your collection with the best t-shirts around.
             </p>
             <div class="prodimage">
-              <img src={Why} className="prodimg" alt="" />
+              {/* <img  className="prodimg" alt="" /> */}
             </div>
             <div
               class="prodbutton"
@@ -166,11 +169,11 @@ function HomePage({ setOption }) {
               quality without breaking the bank.
             </p>
             <div class="prodimage">
-              <img
+              {/* <img
                 src="https://assets.codepen.io/4787486/kittens-1.jpg"
                 className="prodimg"
                 alt=""
-              />
+              /> */}
             </div>
             <div class="prodbutton" onClick={() => navigateToProduct("lowers")}>
               Lowers
