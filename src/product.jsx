@@ -340,7 +340,7 @@ function Productpage({ option, setOption }) {
               }}
             />
             <label for="radio2" class="selector-item_label">
-              Hoddies
+              Hoodies
             </label>
           </div>
           <div class="selector-item">
@@ -393,7 +393,7 @@ function Productpage({ option, setOption }) {
             Color: {item.color}
           </p>
           <div class="buy d-flex justify-content-between align-items-center">
-            <div class="price text-success"><h5 class="mt-4">{item.price}</h5></div>
+            <div class="price text-success"><h5 class="mt-4">{item.material}</h5></div>
           </div>
         </div>
       </div>
@@ -426,7 +426,7 @@ function Productpage({ option, setOption }) {
             Color: {item.color}
           </p>
           <div class="buy d-flex justify-content-between align-items-center">
-            <div class="price text-success"><h5 class="mt-4">{item.price}</h5></div>
+            <div class="price text-success"><h5 class="mt-4">{item.material}</h5></div>
           </div>
         </div>
       {/* </div> */}
@@ -459,7 +459,7 @@ function Productpage({ option, setOption }) {
             Color: {item.color}
           </p>
           <div class="buy d-flex justify-content-between align-items-center">
-            <div class="price text-success"><h5 class="mt-4">{item.price}</h5></div>
+            <div class="price text-success"><h5 class="mt-4">{item.material}</h5></div>
           </div>
         </div>
       </div>

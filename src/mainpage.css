@@ -62,7 +62,7 @@ header nav {
 
 header nav a {
   width: 15vw;
-  padding: 5px 2vw 5px 0px;
+  padding: 5px 18vw 5px 0px;
   text-align: center;
   text-decoration: none;
   font-family: Quicksand;
@@ -131,7 +131,7 @@ header nav a {
   /* margin: auto; */
 }
 .about img {
-  width: 300px;
+  width: 400px;
   /* height: 50vh; */
   border-radius: 8px;
 }
@@ -166,7 +166,7 @@ header nav a {
   width: 250px;
   height: 250px;
   background: rgba(217, 217, 217, 1);
-  border-radius: 19px;
+  border-radius: 20px;
   padding: 50px 50px;
   margin: 10px 45px;
   color: #FF9933;
@@ -298,7 +298,7 @@ footer button {
     font-size: .7rem;
   }
   .about img {
-    width: 30vw;
+    width: 40vw;
   }
 }
 
@@ -333,7 +333,7 @@ footer button {
   }
 
   .about img{
-    width: 35vw;
+    width: 45vw;
   }
 
   .hero button {

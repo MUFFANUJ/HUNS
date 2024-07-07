@@ -107,7 +107,7 @@ function ContactUs() {
       </Row>
       <Row className="justify-content-md-center mt-3">
         <Col md="6" className="text-center">
-          <a href="https://wa.me/8968169361" className="btn btn-success">
+          <a href="https://wa.me/+918968169361" className="btn btn-success">
             Contact us on WhatsApp
           </a>
         </Col>

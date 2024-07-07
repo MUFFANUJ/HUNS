@@ -2,8 +2,11 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./mainpage.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import hoodie from "./assets/demo.png";
+import hoodie from "./assets/Designer.png";
 import Logo from "./assets/Huns logo .png";
+import Icon from "./assets/business.png";
+import Why from "./assets/landing page why us.jpg";
+
 function HomePage({ setOption }) {
   const navigate = useNavigate();
   const navigateToContact = () => {
@@ -17,9 +20,13 @@ function HomePage({ setOption }) {
   return (
     <div className="container">
       <header>
-        <div className="logo"><img src={Logo}/></div>
+        <div className="logo">
+          <img src={Logo} />
+        </div>
         <nav>
-          <a href="#" download="brochure">Brochure</a>
+          <a href="#" download="brochure">
+            Brochure
+          </a>
           {/* <a href="#" onClick={navigateToContact}>
             Contact
           </a> */}
@@ -69,10 +76,7 @@ function HomePage({ setOption }) {
             </p>
           </div>
 
-          <img
-            src="https://pixlr.com/images/index/product-image-one.webp"
-            alt="About Us"
-          />
+          <img src={Why} alt="About Us" />
         </div>
       </section>
       <section>
@@ -122,8 +126,10 @@ function HomePage({ setOption }) {
         <div class="prodwrapper">
           <div class="prodcard">
             <p className="prodp">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              quibusdam omnis repellendus, atque similique magnam alias.
+              Discover our collection of high-quality hoodies, designed for
+              comfort and style. Perfect for any season, our affordable hoodies
+              offer the best in warmth and fashion. Shop now to find the perfect
+              hoodie to elevate your wardrobe.
             </p>
             <div class="prodimage">
               <img src={hoodie} className="prodimg" alt="" />
@@ -137,16 +143,13 @@ function HomePage({ setOption }) {
           </div>
           <div class="prodcard">
             <p className="prodp">
-              Similique magnam alias recusandae veniam, quisquam magni, itaque
-              quaerat dolor? Veniam animi exercitationem at quasi molestiae!
-              Doloremque.
+              Browse our selection of stylish and high-quality t-shirts, ideal
+              for everyday wear. Our affordable t-shirts combine comfort and
+              fashion, making them a must-have in any wardrobe. Shop now to
+              upgrade your collection with the best t-shirts around.
             </p>
             <div class="prodimage">
-              <img
-                src="https://assets.codepen.io/4787486/kittens-1.jpg"
-                className="prodimg"
-                alt=""
-              />
+              <img src={Why} className="prodimg" alt="" />
             </div>
             <div
               class="prodbutton"
@@ -157,9 +160,10 @@ function HomePage({ setOption }) {
           </div>
           <div class="prodcard">
             <p className="prodp">
-              Similique magnam alias recusandae veniam, quisquam magni, itaque
-              quaerat dolor? Veniam animi exercitationem at quasi molestiae!
-              Doloremque.
+              Explore our range of premium lowers, crafted for both durability
+              and comfort. Our affordable lowers are perfect for any activity,
+              from lounging to workouts. Find your ideal fit and enjoy top-notch
+              quality without breaking the bank.
             </p>
             <div class="prodimage">
               <img
