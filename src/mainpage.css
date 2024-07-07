@@ -313,7 +313,9 @@ footer button {
 
 @media (max-width: 550px) {
   .hero{
+
     padding: 4rem 4rem;
+
   }
   header .logo {
     width: 80px;
@@ -325,18 +327,24 @@ footer button {
   .hero h1{
     font-size: 30px;
   }
+
+  .about img{
+    width: 35vw;
+  }
+
   .hero button {
     font-size: 13px;
   }
   .about {
     flex-direction: column;
     padding: 0 6vw;
-    gap: 10px;
+    gap: 20px;
   }
   .extra h2{
     font-size: 1.7rem;
     width: 60vw;
   }
+
 
 }
 .prodwrapper {
