@@ -58,7 +58,7 @@ function HomePage({ setOption }) {
       <section>
         <h2
           className="why"
-          style={{ textAlign: "center", fontSize: "700", fontSize: "3.5rem" }}
+          style={{ textAlign: "center", fontSize: "3.5rem" }}
         >
           Why Us?
         </h2>
@@ -140,7 +140,7 @@ function HomePage({ setOption }) {
               hoodie to elevate your wardrobe.
             </p>
             <div class="prodimage">
-              <img src={Hoodie} className="prodimg" alt="" />
+              <img src={Hoodie} className="prodimg" alt="hoodie" />
             </div>
             <div
               class="prodbutton"
@@ -157,7 +157,7 @@ function HomePage({ setOption }) {
               upgrade your collection with the best t-shirts around.
             </p>
             <div class="prodimage">
-              <img src={Tshirt} className="prodimg" alt="" />
+              <img src={Tshirt} className="prodimg" alt="tshirt" />
             </div>
             <div
               class="prodbutton"
@@ -174,7 +174,7 @@ function HomePage({ setOption }) {
               quality without breaking the bank.
             </p>
             <div class="prodimage">
-              <img src={Trouser} className="prodimg" alt="" />
+              <img src={Trouser} className="prodimg" alt="trouser" />
             </div>
             <div class="prodbutton" onClick={() => navigateToProduct("lowers")}>
               Lowers
