@@ -1,10 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./mainpage.css";
-import tshirt from "./assets/Sd block front.jpg";
-import hoodie from "./assets/demo.png";
-import trouser from "./assets/man lower 1.webp";
 import "bootstrap/dist/css/bootstrap.min.css";
+import hoodie from "./assets/demo.png"
 function HomePage({ setOption }) {
   const navigate = useNavigate();
   const navigateToContact = () => {
