@@ -208,15 +208,15 @@ h6 {
 .prodcontainer{
   font-size: .8rem;
   gap: 0;
-  padding: 10px 0px;
-  width: 300px;
+  padding: 0px 0px;
+  width: 250px;
   background-color: rgb(144, 146, 147);
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
 }
 .propcard img{
-  width: 300px;
+  width: 250px;
   height: 250px;
   object-fit: cover;
 }
@@ -225,7 +225,10 @@ h6 {
 .selector{
   width: 76%;
 }
-
+.card-text{
+  display: flex;
+  flex-wrap: wrap;
+}
 .products{
   flex-direction: row;
   gap: 5px;
@@ -236,7 +239,7 @@ h6 {
   font-size: .8rem;
   gap: 0;
 
-  padding: 10px 0px;
+  padding: 0px 0px;
 
 }
 .propcard{

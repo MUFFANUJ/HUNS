@@ -117,7 +117,7 @@ function HomePage({ setOption }) {
           </div>
         </div>
       </section>
-      <section>
+      <section className="wedo">
         <h2 className="product-tag">What we do best?</h2>
         <div class="prodwrapper">
           <div class="prodcard">

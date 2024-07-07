@@ -22,10 +22,14 @@ body {
   background:var(--main-bg-color);
   color:var(--main-text-color);
 }
-
+.wedo{
+  margin-top: 200px;
+  margin-bottom: 120px;
+}
 section {
   /* height: 90vh; */
   width: 100vw;
+  margin-bottom: 80px;
 }
 
 .container {
