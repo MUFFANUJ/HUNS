@@ -1,4 +1,4 @@
-/* Reset some default styles */
+
 :root {
   --main-bg-color: hsl(220, 18%, 13%);
   --main-text-color: #ffffff;
@@ -10,6 +10,10 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rubik", sans-serif;
+  
+}
+.logo img{
+  width: 100% ;
 }
 
 body {
@@ -20,7 +24,7 @@ body {
 }
 
 section {
-  height: 90vh;
+  /* height: 90vh; */
   width: 100vw;
 }
 
@@ -258,15 +262,21 @@ footer button {
 }
 
 @media (max-width: 768px) {
+  .hero{
+    padding: 4rem 6rem;
+  }
   .hero h1{
-    width: 80vw;
-    font-size: 40px;
+    width: 54vw;
+    font-size: 30px;
   }
   .hero p {
     width: 100%;
     font-size: 0.87rem;
   }
 
+  .feature p{
+    width: 380px;
+  }
   .features,
   .products {
     flex-direction: column;
@@ -276,6 +286,15 @@ footer button {
   .product {
     flex: 1 1 100%;
     margin: 10px 0;
+  }
+  .extra h2{
+    font-size: 1.7rem;
+  }
+  .extra p{
+    font-size: .7rem;
+  }
+  .about img {
+    width: 30vw;
   }
 }
 
@@ -293,6 +312,9 @@ footer button {
 }
 
 @media (max-width: 550px) {
+  .hero{
+    padding: 4rem 4rem;
+  }
   header .logo {
     width: 80px;
     font-size: 15px;
@@ -303,6 +325,19 @@ footer button {
   .hero h1{
     font-size: 30px;
   }
+  .hero button {
+    font-size: 13px;
+  }
+  .about {
+    flex-direction: column;
+    padding: 0 6vw;
+    gap: 10px;
+  }
+  .extra h2{
+    font-size: 1.7rem;
+    width: 60vw;
+  }
+
 }
 .prodwrapper {
   transition: all var(--transition-time);
@@ -386,4 +421,69 @@ footer button {
   cursor: pointer;
 	padding: 0.5em 2em;
 	outline: 0.5em solid var(--main-bg-color);
+}
+
+
+/* card */
+.cardfeature {
+  width: 300px;
+  height: 300px;
+  float: left;
+  perspective: 500px;
+}
+
+.content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.cardfeature:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+.cardfeature:active .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  /* line-height: 300px; */
+  color: #03446A;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  color: #03446A;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden;
+}
+.back {
+  background: #03446A;
+  color: white;
+  transform: rotateY( 180deg );
 }
