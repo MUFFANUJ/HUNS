@@ -22,10 +22,10 @@ function ContactUs() {
       name: 'Anuj Singh',
       notes: 'Check this out im hero!',
     };
-    emailjs.sendForm('service_xdkkrkr', 'template_pxvq4y4', form.current, 'YYHtgp7__9NHK6z2K')
+    emailjs.sendForm('service_osd14oe', 'template_0hkh96b', form.current, 'OrgMd5mzEh2DggWFJ')
     .then((result) => {
       console.log("Successfully send")
-      emailjs.send('service_xdkkrkr', 'template_3wua8nm', templateParams).then(
+      emailjs.send('service_osd14oe', 'template_0hkh96b', templateParams).then(
         (response) => {
           console.log('SUCCESS!', response.status, response.text);
         },
