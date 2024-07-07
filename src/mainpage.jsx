@@ -1,10 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./mainpage.css";
-import tshirt from "./assets/Sd block front.jpg";
-import hoodie from "./assets/demo.png";
-import trouser from "./assets/man lower 1.webp";
 import "bootstrap/dist/css/bootstrap.min.css";
+import hoodie from "./assets/demo.png";
+import Logo from "./assets/Huns logo .png";
 function HomePage({ setOption }) {
   const navigate = useNavigate();
   const navigateToContact = () => {
@@ -18,9 +17,9 @@ function HomePage({ setOption }) {
   return (
     <div className="container">
       <header>
-        <div className="logo">HUNS</div>
+        <div className="logo"><img src={Logo}/></div>
         <nav>
-          <a href="#">Brochure</a>
+          <a href="#" download="brochure">Brochure</a>
           {/* <a href="#" onClick={navigateToContact}>
             Contact
           </a> */}
@@ -79,30 +78,42 @@ function HomePage({ setOption }) {
       <section>
         <div className="features">
           <div className="feature">
-            <h3>Bulk orders made easy</h3>
-            <p>
-              Need to place a large order? We've got you covered. Our
-              streamlined process and efficient production capabilities allow us
-              to handle bulk orders with ease, ensuring timely delivery and
-              consistent quality.
-            </p>
+            <div class="cardfeature">
+              <div class="content">
+                <div class="front">Bulk orders made easy</div>
+                <div class="back">
+                  Need to place a large order? We've got you covered. Our
+                  streamlined process and efficient production capabilities
+                  allow us to handle bulk orders with ease, ensuring timely
+                  delivery and consistent quality.
+                </div>
+              </div>
+            </div>
           </div>
           <div className="feature">
-            <h3>Exceptional quality control</h3>
-            <p>
-              At our clothing manufacturing facility, we prioritize quality
-              control at every stage of production. From fabric inspection to
-              final packaging, we adhere to strict quality standards to ensure
-              that every garment meets your expectations.
-            </p>
+            <div class="cardfeature">
+              <div class="content">
+                <div class="front">Exceptional quality control</div>
+                <div class="back">
+                  At our clothing manufacturing facility, we prioritize quality
+                  control at every stage of production. From fabric inspection
+                  to final packaging, we adhere to strict quality standards to
+                  ensure that ev
+                </div>
+              </div>
+            </div>
           </div>
           <div className="feature">
-            <h3>Fast and reliable shipping</h3>
-            <p>
-              We understand the importance of timely delivery. That's why we
-              have established reliable shipping partnerships to ensure your
-              orders reach you on time, no matter where you are located.
-            </p>
+            <div class="cardfeature">
+              <div class="content">
+                <div class="front">Fast and reliable shipping</div>
+                <div class="back">
+                  We understand the importance of timely delivery. That's why we
+                  have established reliable shipping partnerships to ensure your
+                  orders reach you on time, no matter where you are located.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -167,26 +178,35 @@ function HomePage({ setOption }) {
         <h2>FAQ</h2>
         <div className="faq-item">
           <h3>What are minimum order quantities (MOQ)?</h3>
-          <p>
-            We understand the challenges faced by small and emerging brands,
-            which is why we offer lower minimum order quantities compared to
-            larger manufacturers. This flexibility allows you to place smaller,
-            more manageable orders as you grow your business.
-          </p>
-        </div>
-        <div className="faq-item">
-          <h3>
-            Do you offer custom garment manufacturing based on our designs?
-          </h3>
-          <p></p>
+          <p>• We start with as low as 25 pieces.</p>
         </div>
         <div className="faq-item">
           <h3>What are your payment terms and conditions?</h3>
-          <p></p>
+          <p>
+            {" "}
+            • We request 50% upfront on the placement of an order and 50% on the
+            completion of your order.
+          </p>
+        </div>
+        <div className="faq-item">
+          <h3>What are your payment terms and conditions?</h3>
+          <p>
+            • Yes we can handel any type of customization you want on garments
+          </p>
         </div>
         <div className="faq-item">
           <h3>What makes you different from any other manufacturer?</h3>
-          <p></p>
+          <p>
+            • Its simple we treat every client with utmost priority. Our aim is
+            to help you succeed and make more money. Secondly we are not afraid
+            of telling you the actual market prices of items so that even in
+            future you do not order from us, you never pay an unfair price ever
+            again. Honesty and loyalty are principles that we hold in high
+            regard. Thirdly, we understand that the client may not always
+            understand what product design might best suit their purpose, so we
+            consult with them for free so that they make the best possible
+            choices
+          </p>
         </div>
         <footer>
           <button onClick={navigateToContact}>Contact Us</button>
