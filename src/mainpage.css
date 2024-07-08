@@ -313,7 +313,8 @@ footer button {
   }
   .about {
     flex-direction: column;
-    padding: 0 6vw;
+    align-items:flex-start;
+    padding: 0 17vw;
     gap: 20px;
   }
   .extra h2 {
