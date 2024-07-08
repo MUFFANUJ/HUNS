@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./mainpage.css";
-
+import footer from "./components/footer";
 import Logo from "./assets/huns logo white.png";
 import Why from "./assets/landing page why us.jpg";
 import Brochure from "./assets/huns-brochure.pdf";
@@ -219,6 +219,16 @@ function HomePage({ setOption }) {
         <footer>
           <button onClick={navigateToContact}>Contact Us</button>
         </footer>
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><div class="nav-link px-2 text-white">RADHIKA COLLECTION H NO 1761, B-II, NIGGAR MANDI TOP FLOOR, NEAR CLOCK TOWER LUDHIANA, Ludhiana 141002</div></li>
+      {/* <li class="nav-item"><a href="#" class="nav-link px-2 text-white">8968169361</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-white">rishabhdevkarwa@gmail.com</a></li> */}
+    </ul>
+    <p class="text-center text-white">8968169361</p>
+    <p class="text-center text-white">rishabhdevkarwa@gmail.com</p>
+    <p class="text-center text-white">© 2024 HUNS, Inc</p>
+  </footer>
       </div>
     </div>
   );

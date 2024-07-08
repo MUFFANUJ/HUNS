@@ -10,6 +10,7 @@ import Productpage from "./product";
 function App() {
   const [option, setOption] = useState("");
   return (
+    <>
     <Router>
       <Routes>
         <Route path="/HUNS" element={<HomePage setOption={setOption} />} />
@@ -20,6 +21,7 @@ function App() {
         />
       </Routes>
     </Router>
+    </>
   );
 }
 
